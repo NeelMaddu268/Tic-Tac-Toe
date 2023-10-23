@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Tic-Tac-Toe</title>
+    </head>
+    <body>
+		 <div id="home">
+			 <h1>Tic Tac Toe</h1>
+			 <br><br><br>
+			 <label for="first">Who's First:</label>
+			 
+			 <select name="first" id="first">
+				<option value="Pick">Pick a Player</option>
+  			 	<option value="X">Player X</option>
+  			 	<option value="O">Player O</option>
+			 </select>
+			 <br><br><br>
+
+			 
+			 <button onclick="start()" id="startButton">Start</button>
+		 </div>
+		
+		<div id="temp">
+      <div class="grid" id="grid">
+            <div class="square top left" id="a" onclick="change(0)"></div>
+            <div class="square top" id="b" onclick="change(1)"></div>
+            <div class="square top right" id="c" onclick="change(2)"></div>
+            <div class="square left" id="d" onclick="change(3)"></div>
+            <div class="square" id="e" onclick="change(4)"></div>
+            <div class="square right" id="f" onclick="change(5)"></div>
+            <div class="square bottom left" id="g" onclick="change(6)"></div>
+            <div class="square bottom" id="h" onclick="change(7)"></div>
+            <div class="square bottom right" id="i" onclick="change(8)"></div>
+			</div>
+		 </div>
+		 
+		 <div id="gameOverDiv">
+			 <h3 id="winnerText">The winner is </h3>
+			 <p>Thanks for Playing</p>
+		 </div>
+		 
+        <button onclick="location.reload()" id="restartButton">Play Again?</button>
+
+		 
+                <script src="script.js"></script>
+
+    </body>
+</html>
